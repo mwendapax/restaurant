@@ -1,0 +1,36 @@
+:root {
+    --yellow : rgb(255, 222, 115);
+    --orange : rgb(236,154,59);
+    --drk-orange : rgb(193,106,8);
+}
+
+nav {
+    background-color: var(--yellow);
+}
+
+body {
+    background: linear-gradient(to right, lightcoral, coral);
+}
+
+/*Layout*/
+
+
+nav {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 5px;
+    border-radius: 40px 0px 0px 40px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(50% / 3);
+        height: 100%;
+        border-inline: 1px solid coral;
+        border-top: 1px solid coral;
+        border-radius: 12px 12px 0px 0px;
+    }
+}
